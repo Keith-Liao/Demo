@@ -1,4 +1,4 @@
-ARG docker.io/library/openjdk:21
+ARG v1=17
 FROM openjdk:${v1}
 COPY ./target/*.jar* .jar
 EXPOSE 9090 
