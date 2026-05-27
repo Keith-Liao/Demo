@@ -1,5 +1,6 @@
-ARG v1=17
-FROM openjdk:${v1}
+//ARG v1=17
+//FROM openjdk:${v1}
+FROM eclipse-temurin:21-jdk
 COPY ./target/*.jar* .jar
 EXPOSE 9090 
 CMD["java","-jar","*.jar"]
