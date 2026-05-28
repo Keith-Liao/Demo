@@ -16,7 +16,7 @@ pipeline{
         //     }
         // }
          stage('linux'){
-            agent {label 'Built-In Node'}
+            // agent {label 'Built-In Node'}
             steps{
                git url:'https://github.com/Keith-Liao/Demo.git',branch:'main',credentialsId:'e2432a4a-dc19-4275-bacd-50c961bc00d4'
                dir('demo'){
